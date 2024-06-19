@@ -1,0 +1,30 @@
+body{
+    font-family: 'Shadows Into Light';
+    background-image: linear-gradient(to left, blue, orange);
+    margin: -1px;
+    padding: -10px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    text-align: center;
+}
+
+.content div{
+    border-color: black;
+    border-style: solid;
+    background-color: skyblue;
+    text-align: center;
+    padding: 30px;
+}
+
+.middle{
+    grid-column: 1 / span 4;
+    min-height: 150px;
+}
+
+.right{
+    padding: 10px;
+    background-color: black;
+}

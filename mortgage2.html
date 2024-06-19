@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Velker Factor Calculator</title>
+    <link rel="stylesheet" href="mortgage.css">
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <h1>Mortgage Payment Calculator</h1>
+        </div>
+        <div class="middle">
+            <p>Although your credit might take a temporary hit when you get 
+                your mortgage, over time, paying down the balance can help 
+                improve or maintain your credit score. A higher credit score 
+                translates to everything from better interest rates to more loan options.
+            </p>
+            <form action="javascript:void(0)" onsubmit="calcVelker()">
+                <p>
+                    <label for="x">Principal ($):</label>
+                    <input id="x" name="x" type="number" min="1" required>
+                </p>
+                <p>
+                    <label for="y">Yearly Interest Rate (%):</label>
+                    <input id="y" name="y" type="number" min="0.01" step="0.01" required>
+                </p>
+                <p>
+                    <label for="years">Length of Mortgage (years):</label>
+                    <select id="years" name="years" required>
+                      <option value="10">10</option>
+                      <option value="15">15</option>
+                      <option value="30">30</option>
+                    </select>
+                </p>
+                <p>Velker Factor: <span class="velker_factor" id="result"></span></p>
+                <p>
+                    <input type="submit" value="Calculate!" required>
+                </p>
+            </form>
+        </div>
+        <div class="right">
+            <img src="bank.jpg" alt="Bank Image">
+        </div>
+    </div>
+    <div class="footer">
+        Copyright 2024 All rights reserved.
+    </div>
+    <script src="mortgage2.js"></script>
+</body>
+</html>
